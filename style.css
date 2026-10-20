@@ -1,0 +1,247 @@
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    font-family: 'Verdana', sans-serif;
+    background-color: #141465;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+
+}
+
+a {
+    cursor: pointer;
+    font-family: 'Verdana', sans-serif;
+    text-decoration: none;
+    color: #51ACFF;
+}
+
+p {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #313131;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    background-color: #141415;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 10px;
+
+}
+
+.header_logo {
+    max-width: 20px;
+}
+
+.welcome_title_h1 {
+    max-width: 560px;
+    font-size: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 60px;
+    margin: 0;
+}
+
+.buy_now_content {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.buy_now_btn {
+    font-weight: 700;
+}
+.buy_now_icon {
+    height: 12px;
+}
+
+.welcome_img {
+    max-width: 548px;
+    height: auto;
+    padding-top: 20px;
+}
+
+.description_blocks {
+    display: flex;
+    flex-direction: row;
+    gap: 65px;
+    margin: 45px;
+}
+
+.description_block {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.desc_h {
+    color: #FFFFFF;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin: 0;
+}
+.desc_p {
+    color: #FFFFFF;
+    font-size: 10px;
+    font-weight: 400;
+    margin:0;
+}
+.description_rect {
+    margin-top: 15px;
+}
+
+.footer {
+    background-color: #313131;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 40px;
+}
+
+
+.footer_icons {
+    display: flex;
+    gap: 27px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.footer_desc {
+    max-width: 470px;
+    color: #7D7D7D;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media (max-width: 980px) {
+    .description_blocks {
+        gap: 30px;
+        margin: 35px 20px;
+    }
+
+    .welcome_title_h1 {
+        width: 100%;
+        max-width: 520px;
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 767px) {
+    .header .container {
+        padding: 18px 20px;
+    }
+
+    .welcome_title_h1 {
+        width: 100%;
+        max-width: 420px;
+        font-size: clamp(28px, 7vw, 42px);
+        line-height: 1.15;
+        padding-top: 40px;
+    }
+
+    .buy_now_content {
+        padding-top: 28px;
+    }
+
+    .welcome_img {
+        width: min(100%, 440px);
+        padding-top: 28px;
+    }
+
+    .description_blocks {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 22px;
+        margin: 30px 0 40px;
+    }
+
+    .description_block {
+        width: 150px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .desc_h {
+        font-size: 28px;
+    }
+
+    .desc_p {
+        font-size: 10px;
+    }
+
+    .description_rect {
+        width: 100%;
+        max-width: 90px;
+    }
+
+    .footer {
+        padding: 0 20px 40px;
+    }
+
+    .footer_desc {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header_logo{
+        width: 18px;
+    }
+    .welcome_title_h1{
+        padding-top: 28px;
+    }
+    .buy_now_btn {
+        font-size: 14px;
+    }
+    .description_blocks {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+
+    .description_block {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .footer_icons {
+        margin-top: 30px;
+        margin-bottom: 18px;
+        gap: 20px;
+    }
+
+    .footer_desc {
+        font-size: 9px;
+        line-height: 1.5;
+    }
+    }
+}
